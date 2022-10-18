@@ -1,0 +1,24 @@
+Source: ruby-coffee-script
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Daniel Leidert <dleidert@debian.org>
+Build-Depends: debhelper (>= 12~), gem2deb
+Standards-Version: 4.4.1
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-coffee-script.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-coffee-script
+Homepage: https://github.com/rails/ruby-coffee-script
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-coffee-script
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-coffee-script-source,
+         ruby-execjs,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Ruby CoffeeScript Compiler
+ Ruby CoffeeScript is a bridge to the JS CoffeeScript compiler. It allows Ruby
+ programs and libraries to compile CoffeeScript code into JavaScript.

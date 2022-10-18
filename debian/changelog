@@ -1,0 +1,38 @@
+ruby-coffee-script (2.4.1-2) unstable; urgency=medium
+
+  [ Antonio Terceiro ]
+  * d/control (Uploaders): Remove myself.
+
+  [ Daniel Leidert ]
+  * debian/compat: Raise to dh level 12.
+  * debian/control (Standards-Version): Bump to 4.4.1.
+    (Build-Depends): Drop ruby-coffee-script-source and ruby-execjs. They will
+    be pulled in via the Depends field.
+    (Vcs-Git, Vcs-Browser): Set to salsa.d.o location.
+    (Homepage): Point to the Rails GitHub project.
+    (Uploaders): Add myself to fix no-human-maintainers.
+  * d/copyright (Format): Fix insecure-copyright-format-uri.
+    (Source): Point to the Rails GitHub project.
+  * debian/rules: Comment GEM2DEB_TEST_RUNNER and let autopkgtest handle this.
+  * d/watch: Use gemwatch.d.n.
+
+ -- Daniel Leidert <dleidert@debian.org>  Mon, 11 Nov 2019 01:54:36 +0100
+
+ruby-coffee-script (2.4.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update packaging with a new dh-make-ruby run
+
+ -- Antonio Terceiro <terceiro@debian.org>  Fri, 14 Aug 2015 14:06:27 -0300
+
+ruby-coffee-script (2.2.0-2) unstable; urgency=medium
+
+  * No changes rebuild to add support for new interpreters.
+
+ -- Antonio Terceiro <terceiro@debian.org>  Sat, 29 Mar 2014 12:34:14 -0300
+
+ruby-coffee-script (2.2.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Antonio Terceiro <terceiro@debian.org>  Wed, 27 Jun 2012 21:27:03 -0300
